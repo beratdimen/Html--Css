@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: yellow;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 700px) {
+        h1 {
+          font-size: 16px;
+        }
+        body {
+          background: red;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        h1 {
+          font-size: 12px;
+        }
+        body {
+          background: blue;
+        }
+      }
+      @media screen and (max-width: 300px) {
+        h1 {
+          font-size: 8px;
+        }
+        * {
+          box-sizing: border-box;
+        }
+      }
+      .div {
+        width: 25%;
+        height: 250px;
+        background: green;
+        float: left;
+        border: 1px solid blue;
+      }
+      @media screen and (max-width: 700px) {
+        .div {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Komple uygulamalı web geliştirme eğitimi</h1>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+  </body>
+</html>

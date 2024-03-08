@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Öğreniyorum</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <style>
+      .button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 25px;
+      }
+      .orta {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .isim {
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+        background-image: url(img/WordPress_blue_logo.svg.png);
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+      }
+      .divOzellik{
+        width: 100%;
+        height: 100px;
+        background-color: blue;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .divOzellik2{
+        width: 100%;
+        height: 100px;
+        background-color: rgb(98, 255, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <div class="ortak">
+      <div class="button">
+        <button id="button" type="buton" class="btn btn-primary">Buton</button>
+      </div>
+      <div class="orta">
+        <p id="isim">berat efe dimen</p>
+        <h1>ahmet veli</h1>
+      </div>
+    </div>
+    <div class="isim">
+      <p>beratefedimen beratefedimen</p>
+    </div>
+    <center>
+      <img src="img/WordPress_blue_logo.svg.png" width="200px" height="200px" />
+    </center>
+    <ol type="1">
+      <li>Coffee</li>
+      <ol type="A">
+        <li>Şekerli</li>
+        <li>Orta</li>
+        <li>Şekersiz</li>
+      </ol>
+      <li>Tea</li>
+      <ol type="A">
+        <li>Şekerli</li>
+        <li>Şekersiz</li>
+        <li>Orta</li>
+      </ol>
+        <ol>
+          <table border="1">
+            <tr>
+              <th colspan="3">Kişisel bilgiler</th>
+            </tr>
+           
+              
+            
+            <tr>
+              <td rowspan="3">birleşme</td>
+              <th>
+                isim
+              </th>
+              <th>soyisim</th>
+              <th>yaş</th>
+            </tr>
+            
+            <tr>
+              <td>Berat</td>
+              <td>Dimen</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>ahmet</td>
+              <td>bayrak</td>
+              <td>32</td>
+            </tr>
+          </table>
+          
+          <table border="1" >
+            <tr>
+              
+              <th colspan="3" >Product</th>
+
+            </tr>
+            <tr>
+              <th>NO</th>
+              <th>P.Name</th>
+              <th>P.Count</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Pen</td>
+              <td rowspan="3">50</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Book</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Dust</td>
+            </tr>
+          </table>
+          <p>Berat</p>
+          <h2>İletişim Sayfası</h2>
+          <span>Telif Hakları Saklıdır</span>
+          <span>----->sasadsadas</span>
+          <div class="divOzellik"> <h3 >Web Siteme Hoşgeldiniz</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, officia.</p>
+          </div>
+          <div class="divOzellik2"></div>
+          <form > 
+            <input type="text" placeholder="İsminiz"/>
+            <input type="password" placeholder="Şifreniz"/>
+            <input type="email" placeholder="Email Adres"/><br/>
+            Kitap Okumak<input type="checkbox"id="kitapCheckbox"/> <br/>
+            Spor yapmak<input type="checkbox" id="sporCheckbox"/><br/>
+            kadın <input type="radio" name="cinsiyetRadio"/> <br/>
+            erkek <input type="radio" name="cinsiyetRadio"/> <br/>
+           <input type="file"/><br>İçecekler
+           
+           <select >
+            <option value="Çay">Çay</option>
+            <option value="Kahve">Kahve</option>
+            <option value="Gazoz">Gazoz</option>
+           </select>
+           <br>
+           <textarea name="mesajinput" id="mesajalani" cols="30" rows="10"></textarea><br>
+           <input type="submit" value="gönder"/>
+           <input type="reset" value="Temizle"/>
+          </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>

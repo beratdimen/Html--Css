@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Tasarım</title>
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/menu-boxed.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      } /* HEADER CSS BASLANGIICI*/
+      .container-1{
+        max-width: 100%;
+        height: 100%;
+        background-color: #151b28;
+      }
+      .header {
+        display: grid;
+ grid-template-columns: 15% 70% 15%;
+        padding-left: 300px;
+        padding-right: 300px;
+        height: 10vh;
+        align-items: center;
+      }
+      .menu-icon{
+        display: none;
+      }
+      .menu a{
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        margin-left: 40px;
+        margin-right: 10px;
+      }
+     
+      .button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .button a{
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: none;
+      }
+      .button button{
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: blue;
+        color: white;
+        border-radius: 3px;
+        border: 0px solid #151b28;
+        width: 80px;
+        padding: 10px;
+      }
+ /* HEADER CSS BİTİSİ*/
+
+
+   /* PART 1 YAZILARIN CSS BASLANGIICI*/
+.part{
+ display: flex;
+ flex-direction: column;
+
+ justify-content: center;
+        text-align: center;
+        padding-left: 200px;
+        padding-right: 200px;
+  
+ 
+}
+   .part h1{
+   
+    font-weight: 750;
+    font-size: 30px;
+  color: white;
+
+  
+}
+.part p{
+ 
+  font-weight: 450;
+  font-size: 15px;
+  color: #a5acba ;
+}
+ 
+ 
+   /* PART 1 YAZILARIN CSS BİTİSİ*/
+
+
+         /* TAB (MONTH/YEAR) YAZILARIN CSS BASLANGICI*/
+.tab-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.tab{
+  display: flex;
+  justify-content: center;
+        align-items: center;
+  background-color: #2e3545;
+        width: 300px;
+        height: 55px;
+        border-radius: 10px;
+        
+        
+}
+.tab button{
+  margin-left: 12px;
+  margin-right: 12px;
+  color: white;
+  border-radius: 3px;
+  border: 0px solid #151b28;
+  background-color: #333b48;
+  width: 150px;
+  padding: 10px;
+}
+.tab a{
+  margin-right: 12px;
+  color: #a5acba;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+}
+#user-card{
+background-color: #151b28;
+color: white;
+}
+     /* TAB (MONTH/YEAR) YAZILARIN CSS BİTİSİ*/
+ 
+ /* PLANLAR KISMI YAZILARIN CSS BASLANGICI*/
+ 
+ 
+ 
+ 
+  /* PLANLAR KISMI YAZILARIN CSS BİTİSİ*/
+  @media (max-width:768px) and (min-width:350px) {
+   
+      
+      .header {
+          display: flex;
+          justify-content: space-between;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      .menu-icon{
+        display: block;
+        color: white;
+      }
+      .menu {
+        display: none;
+      }
+      .button a{
+        display: none;
+      }
+      .button button{
+        display: none;
+      }
+
+  }
+ </style>
+  </head>
+  <body> <div class="container-1">
+    <div class="headercontainer">
+
+    <div class="header">
+      <div class="logo">
+        <img
+          src="https://esmomerr.github.io/Pricing-WebSite-Responsive/assets/img/Company%20Logo.svg"
+          alt=""
+        />
+      </div>
+      <div class="menu">
+        <a href="#">Home</a>
+            <a href="our-product">Our Products</a>
+            <a href="resources">Resources</a>
+            <a href="contact">Contacts</a>
+      </div>
+      <div class="button">
+        <a href="#">Sign Up</a>
+        <button>Login</button></div>
+      <div class="menu-icon"><i class="gg-menu-boxed"></i></div>
+
+    </div>
+  </div>
+    
+    <div class="part">
+      <h1>
+        Hype got you here.<br />
+        Stay for the support.
+      </h1>
+     <p>We've been told it is possible to revolutionize the payment industry.
+      We have not reinvented the wheel, we decided to build upon it -
+      successfully.</p>
+    
+    </div>
+    <div class="tab-container">
+      <div class="tab">
+      <button>Montly</button>
+      <a href="">Yearly</a>
+    </div>
+    </div>
+    <div id="user-card">
+      <!-- JavaScript ile oluşturulan planların buraya ekleneceği alan -->
+    </div>
+</div>
+
+    <script src="fetch.js"></script>
+  </body>
+</html>
